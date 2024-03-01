@@ -1,0 +1,74 @@
+.signupRow{
+    height:100vh !important;
+}
+
+.signupImage{
+    background-image: url("../../assets//images/signup1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.signupCardOuter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:80%;
+}
+
+.signupTitle{
+    font-size: 2.5rem;
+    color: #57c5b6;
+    font-family: "Satisfy", cursive;
+    margin-bottom: 10px !important;
+}
+
+.inputStyles{
+    margin:1% 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+}
+
+.signupButton{
+    margin-top: 15px;
+    background-color: #57c5b6 !important;
+    color:#fefefe !important;
+    border:none !important;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+}
+.signupButton:hover{
+    color:#fefefe !important;
+    border:1px solid #fefefe !important;
+}
+
+.signupLink{
+    margin-top: 15px;
+    color: #b4b4b4;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+}
+
+.closeFloater{
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top:15px;
+    right:15px;
+    color: #57c5b6;
+}
+
+.closeFloater:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,114 @@
+.dashContainer {
+  height: 100vh;
+  /* width:100vh; */
+}
+
+.sidebarContainer {
+  background-color: #dafffbbc !important;
+  min-width: 100px;
+}
+
+.spaceBtwn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brandContainer {
+  background-color: #57c5b6;
+  padding: 20px 0 15px 0;
+  margin-bottom: 20px;
+}
+
+.brandText {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fefefe;
+  font-family: "Satisfy", cursive;
+}
+
+.menuItem {
+  margin: 5px 8px;
+  /* background-color: #c1d4d2; */
+  padding: 8px 16px;
+  border-radius: 16px;
+  display: flex;
+  /* align-items:flex-start; */
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  color: #04364a;
+  border: 1px solid #57c5b6;
+}
+
+.menuItem:hover {
+  cursor: pointer;
+}
+
+.createButton {
+  margin: 10px 8px;
+  padding: 4px 16px;
+  border-radius: 16px;
+  display: flex;
+  /* align-items:flex-start; */
+  justify-content: flex-start;
+  background-color: #57c5b6;
+  color: #fefefe;
+  font-size: 1.3rem;
+  font-family: "Satisfy", cursive;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 6px;
+}
+.createButton:hover {
+  cursor: pointer;
+}
+
+.menuItemSelected {
+  margin: 5px 8px;
+  background-color: #5fc7c04f;
+  padding: 8px 16px;
+  border-radius: 16px;
+  display: flex;
+  /* align-items:flex-start; */
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  color: #04364a;
+  border: 1.5px solid #57c5b6;
+}
+
+.menuItemSelected:hover {
+  cursor: pointer;
+}
+
+.divider {
+  margin: 2px 0 !important;
+}
+
+.profile {
+  background-color: #5fc7c04f;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  color: #04364a;
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.logoutButton{
+  color:#57c5b6 !important;
+  border: 1px solid #57c5b6 !important;
+  width: 130px !important;
+}
+.logoutButton:hover{
+  color:#57c5b6 !important;
+  border: 1px solid #57c5b6 !important;
+}

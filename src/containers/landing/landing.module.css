@@ -1,0 +1,154 @@
+.landingBg {
+  background-image: url("../../assets//images//landing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: inset 0 0 0 1000px #0000007f;
+}
+
+.innerContainer {
+  padding: 6% 5%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height:60%; */
+}
+
+.brandText {
+  font-size: 5.7rem;
+  color: #57c5b6;
+  color:#fefefe;
+  font-family: "Satisfy", cursive;
+}
+
+.brandPhrase {
+  font-size: 1.6rem;
+  color: #b4b4b4;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.buttonContainer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.button1 {
+  min-width: 180px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #000;
+  background-color: #57c5b6;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 16px;
+}
+.button1:hover {
+  color: #fefefe !important;
+  cursor: pointer;
+}
+
+.button2 {
+  margin-left: 15px;
+  min-width: 180px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #57c5b6;
+  background-color: #fefefe;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 16px;
+}
+
+.button2:hover {
+  color: #0c0000 !important;
+  cursor: pointer;
+}
+
+.contentB {
+  margin-top: 5%;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.badge {
+  background-color: #df5753;
+  color: #000;
+  font-family: "Times New Roman", "Times", "serif";
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+
+.featureSection {
+  padding: 4% 4% 0 4%;
+  text-align: center;
+}
+
+.featureHeading {
+  font-size: 3rem;
+  color: #57c5b6;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 25px;
+}
+
+.colStyle {
+  padding: 15px;
+}
+
+.bannerSideText {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.story3banner {
+  height: 55vh;
+  width: auto;
+  background-image: url("../../assets/images/story3Banner.jpg");
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardImages {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partnershipText {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+
+.footerSection {
+  /* margin-top: 4%; */
+  padding: 3% 20px;
+  background-color: #57c5b6;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+
+.footerMade {
+  color: #313131;
+  padding-bottom: 1.5%;
+}
