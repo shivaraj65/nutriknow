@@ -5,10 +5,20 @@ import { useRouter } from "next/router";
 
 import styles from "./dashboard.module.css";
 
+import ChatPage from "@/components/chatPage";
 import userCreds from "@/store/userCreds";
 import { useShallow } from "zustand/react/shallow";
 
-import { Button, Row, Col, Input, message, Layout, Divider, Popover } from "antd";
+import {
+  Button,
+  Row,
+  Col,
+  Input,
+  message,
+  Layout,
+  Divider,
+  Popover,
+} from "antd";
 import {
   CompassOutlined,
   FolderOpenOutlined,
@@ -19,21 +29,8 @@ import {
 
 const { Header, Content, Footer, Sider } = Layout;
 
-
-
 const Dashboard = () => {
   const router = useRouter();
-
-  const [selectedMenu, setSelectedMenu, pageFlag, setPageFlag] = userCreds(
-    useShallow((state) => [
-      state.selectedMenu,
-      state.setSelectedMenu,
-      state.pageFlag,
-      state.setPageFlag,
-    ])
-  );
-
-
 
   const [credName, setCredName] = useState("");
 
@@ -56,15 +53,34 @@ const Dashboard = () => {
     }
   }, [checkCredIdInLocalStorage]);
 
-  const logout =()=>{
+  const logout = () => {
     localStorage.clear();
     router.push("/");
-  }
+  };
 
   return (
-    <>
-      dashboard
-    </>
+    <div className={styles.dashContainer}>
+      <Row style={{ height: "100%", width: "100%" }}>
+        <Col span={5} className={styles.sidebarContainer}>
+          <div className={styles.spaceBtwn}>
+            <div>
+              <div className={styles.brandContainer}>
+                <h1 className={styles.brandText}>Nutri Know</h1>
+              </div>
+              <div className={styles.chatHistoryContainer}>
+                <p>chat history</p>
+              </div>
+            </div>
+            <div>
+              <p>Logout</p>
+            </div>
+          </div>
+        </Col>
+        <Col span={19}>
+          <ChatPage/>
+        </Col>
+      </Row>
+    </div>
   );
 };
 

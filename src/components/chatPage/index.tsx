@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import styles from "./tabs.module.css";
+import styles from "./chatPage.module.css";
 import Image from "next/image";
 
 interface Props {
- id:any;
 }
 
-const Tabs: React.FC<Props> = (props) => {
+const ChatPage = () => {
   return (
-    <div className={styles.tabsContainer}>
+    <div>
         hello chatpage
     </div>
   );
 };
 
-export default Tabs;
+export default ChatPage;

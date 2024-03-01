@@ -6,6 +6,7 @@
 .sidebarContainer {
   background-color: #dafffbbc !important;
   min-width: 100px;
+  height:100%;
 }
 
 .spaceBtwn {
