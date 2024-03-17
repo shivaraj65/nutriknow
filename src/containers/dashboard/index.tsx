@@ -9,6 +9,8 @@ import ChatPage from "@/components/chatPage";
 import userCreds from "@/store/userCreds";
 import { useShallow } from "zustand/react/shallow";
 
+import Sidebar from "@/components/sidebar";
+
 import {
   Button,
   Row,
@@ -62,22 +64,10 @@ const Dashboard = () => {
     <div className={styles.dashContainer}>
       <Row style={{ height: "100%", width: "100%" }}>
         <Col span={5} className={styles.sidebarContainer}>
-          <div className={styles.spaceBtwn}>
-            <div>
-              <div className={styles.brandContainer}>
-                <h1 className={styles.brandText}>Nutri Know</h1>
-              </div>
-              <div className={styles.chatHistoryContainer}>
-                <p>chat history</p>
-              </div>
-            </div>
-            <div>
-              <p>Logout</p>
-            </div>
-          </div>
+          <Sidebar />
         </Col>
         <Col span={19}>
-          <ChatPage/>
+          <ChatPage />
         </Col>
       </Row>
     </div>

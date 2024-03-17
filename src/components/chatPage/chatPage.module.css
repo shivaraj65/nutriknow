@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+}
+
+.chatContainer {
+  height: 85vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.inputContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 10vh;
+  /* background-color: #c3dff7; */
+}
+
+.input {
+  margin-top: 8px;
+  padding-left: 4%;
+  width: 95%;
+}
+
+.userContainer {
+  display: flex;
+  margin: 6px 0 0 0;
+  background-color: #e6fffc1e; /* Background color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside the bubble */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07); /* Very light grey shadow */
+}
+
+.botContainer {
+  margin: 6px 0;
+  display: flex;
+  background-color: #57c5b61e; /* Background color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside the bubble */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Very light grey shadow */
+}
+
+.userIcon {
+  font-size: 20px;
+  color: #57c5b6;
+}
+
+.title {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  font-size: 0.9rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #6f6f6f;
+  border-radius: 4px;
+}

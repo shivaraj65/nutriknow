@@ -6,27 +6,7 @@
 .sidebarContainer {
   background-color: #dafffbbc !important;
   min-width: 100px;
-  height:100%;
-}
-
-.spaceBtwn {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.brandContainer {
-  background-color: #57c5b6;
-  padding: 20px 0 15px 0;
-  margin-bottom: 20px;
-}
-
-.brandText {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #fefefe;
-  font-family: "Satisfy", cursive;
 }
 
 .menuItem {
@@ -104,12 +84,12 @@
   cursor: pointer;
 }
 
-.logoutButton{
-  color:#57c5b6 !important;
+.logoutButton {
+  color: #57c5b6 !important;
   border: 1px solid #57c5b6 !important;
   width: 130px !important;
 }
-.logoutButton:hover{
-  color:#57c5b6 !important;
+.logoutButton:hover {
+  color: #57c5b6 !important;
   border: 1px solid #57c5b6 !important;
 }

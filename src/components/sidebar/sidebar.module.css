@@ -1,0 +1,75 @@
+.spaceBtwn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-family: "Noto Sans", sans-serif !important;
+  font-weight: 400;
+}
+
+.brandContainer {
+  background-color: #57c5b6;
+  padding: 20px 0 15px 0;
+  margin-bottom: 20px;
+}
+
+.brandText {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fefefe;
+  font-family: "Satisfy", cursive;
+}
+
+.chatHistoryContainer {
+  position: relative;
+}
+
+.historyTitle {
+  text-align: left;
+  padding-left: 5%;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.chatHistoryInnerContainer {
+  height: 70vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.historyCard {
+  padding: 8px 6px 8px 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 3px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+}
+
+.historyText {
+  flex: 1;
+  max-width: 60%;
+  padding-left: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300 !important;
+}
+
+.historyCard:hover {
+  background-color: #57c5b659;
+  cursor: pointer;
+}
+
+
+.logoutButton{
+  margin-bottom: 4px;
+  font-weight: 500;
+}
