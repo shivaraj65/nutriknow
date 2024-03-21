@@ -26,10 +26,23 @@
 }
 
 .historyTitle {
+  display:flex;
+  justify-content: space-between;
   text-align: left;
   padding-left: 5%;
   font-size: 1.1rem;
   margin-bottom: 6px;
+}
+
+.newChatIcon{
+  margin-right: 14px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.newChatIcon:hover{
+  background-color: #e6e7e6;
 }
 
 .chatHistoryInnerContainer {
@@ -48,26 +61,50 @@
   border-radius: 6px;
 }
 
-.textContainer {
+.historyCardSelected{
+  padding: 8px 6px 8px 10px;
+  font-size: 1rem;
   display: flex;
   align-items: center;
+  margin: 3px;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #57c5b62f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.historyCardSelected:hover{
+
+}
+
+.textContainer {
+  display: flex;
+  align-items:flex-start;
 }
 
 .historyText {
-  flex: 1;
-  max-width: 60%;
-  padding-left: 8px;
+
+  max-width:210px;  
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.historyTextInner{
+  padding-left: 8px;
   font-weight: 300 !important;
 }
 
 .historyCard:hover {
-  background-color: #57c5b659;
+  background-color: #e3f1ff;
   cursor: pointer;
 }
 
+.moreButton{
+  display: flex;
+  /* position: fixed; */
+  justify-content: flex-end;
+}
 
 .logoutButton{
   margin-bottom: 4px;

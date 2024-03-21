@@ -50,7 +50,7 @@ const SignupContainer = () => {
       const response = await fetch("/api/signup", requestOptions);
       const resWithoutStreaming = await new Response(response.body).text();
       const result = await JSON.parse(resWithoutStreaming);
-      console.log(result);
+      // console.log(result);
       //save the res to zustand.
       if(result.status === 'userExist'){
         //notify here

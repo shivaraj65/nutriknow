@@ -1,35 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 import styles from "./dashboard.module.css";
 
 import ChatPage from "@/components/chatPage";
-import userCreds from "@/store/userCreds";
-import { useShallow } from "zustand/react/shallow";
 
 import Sidebar from "@/components/sidebar";
 
-import {
-  Button,
-  Row,
-  Col,
-  Input,
-  message,
-  Layout,
-  Divider,
-  Popover,
-} from "antd";
-import {
-  CompassOutlined,
-  FolderOpenOutlined,
-  ControlOutlined,
-  EditOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
-
-const { Header, Content, Footer, Sider } = Layout;
+import { Row, Col } from "antd";
 
 const Dashboard = () => {
   const router = useRouter();

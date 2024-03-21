@@ -22,7 +22,7 @@ model chatthread {
   id    String   @id @map("_id") 
   threadId String
   threadName String
-  userId String
+  userId String 
   createdAt DateTime
 } 
 

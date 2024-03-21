@@ -44,7 +44,7 @@ const LoginContainer = () => {
       const response = await fetch("/api/login", requestOptions);
       const resWithoutStreaming = await new Response(response.body).text();
       const result = await JSON.parse(resWithoutStreaming);
-      console.log(result);
+      // console.log(result);
       if (result.status === "success" && result.data.length > 0) {
         localStorage.setItem('credId', result.data[0].id);
         localStorage.setItem('credName', result.data[0].name);
