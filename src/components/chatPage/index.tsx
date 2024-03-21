@@ -22,6 +22,7 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 const ChatPage = () => {
  const [search, setSearch] = useState("")
 
+
   const [loader, setLoader] = useState(false);
 
   const [messageApi, contextHolder] = message.useMessage();
@@ -86,7 +87,7 @@ const ChatPage = () => {
     // console.log(result);
     if (result.status === "success") {
       // console.log(result);
-      saveQuestionAnswer(value, result.data);
+      await saveQuestionAnswer(value, result.data);
       //save question and answer api...
     } else {
       messageApi.open({
@@ -101,7 +102,6 @@ const ChatPage = () => {
     let threadId: any = "";
     if (id === "new") {
       threadId = await createThread(question);
-      setId(threadId);
       console.log("after setting to store.");
       if (threadId === false) {
         messageApi.open({
@@ -115,6 +115,7 @@ const ChatPage = () => {
         if (saved) {
           const saved = await saveAnswer(answer, threadId);
           setLoader(false);
+          setId(threadId);
         }
       }
     } else {
@@ -169,7 +170,7 @@ const ChatPage = () => {
     const resWithoutStreaming = await new Response(response.body).text();
     const result = await JSON.parse(resWithoutStreaming);
     if (result.status === "success") {
-      loadData();
+      await loadData();
       return true;
     } else {
       setLoader(false);

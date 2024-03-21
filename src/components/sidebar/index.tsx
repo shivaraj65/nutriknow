@@ -30,11 +30,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     loadData();
-  }, []);
-
-  useEffect(() => {
-    loadData();
-  }, []);
+  }, [id]);
 
   const loadData = async () => {
     const requestOptions: RequestInit = {
